@@ -30,6 +30,7 @@ const ListItem: React.FC<ListItemProps> = ({rootList, item, userId}): ReactEleme
                     </Badge>
                 )}
                 <Badge bg="info">{item.status}</Badge>
+                <Badge bg="primary">Vytvoril: {item.createdBy?.email}</Badge>
             </Card.Body>
             <Authenticated>
                 {(rootList.userId === userId || rootList.SharedList.some((shared) => shared.userId === userId)) && (

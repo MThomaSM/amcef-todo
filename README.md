@@ -27,3 +27,4 @@
 1. Run the following command to start the Next.js development server: ``npm run dev ``
 
 This will start the server and make your application accessible at `http://localhost:3000`.
+Endpoint documentations: https://documenter.getpostman.com/view/27769979/2s93sW7aA7#e89268ec-434d-49af-81fb-ee3b2df942b5

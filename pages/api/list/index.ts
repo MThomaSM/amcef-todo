@@ -12,9 +12,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
         const lists = await prisma.list.findMany({
             include: {
-                items: true,
-                SharedList: true
-            }
+                items: {
+                    include: {
+                        createdBy: true,
+                    },
+                },
+                SharedList: true,
+            },
         });
 
         res.status(200).json(lists);

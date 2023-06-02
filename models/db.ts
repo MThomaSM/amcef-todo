@@ -30,6 +30,8 @@ export interface Item {
     description?: string | null;
     deadline?: Date | string ;
     status: ItemStatus;
+
+    createdBy?: User;
     createdById?: string;
     list?: List;
     listId?: string;
