@@ -1,4 +1,4 @@
-## Running AMCEF TODO app with Prisma migrations
+## Running TODO app with Prisma migrations
 
 ### Prerequisites
 - Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
